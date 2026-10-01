@@ -1,0 +1,20 @@
+tosca_definitions_version: tosca_simple_yaml_1_2
+
+imports:
+  - <normative-types.yml>
+  - <yorc-types.yml>
+
+metadata:
+  template_author: test
+  template_name: ru.basis.topologies.test_mixed_1950
+  template_version: 1.0.0
+
+node_types:
+  ru.basis.nodes.TestLocalComponent1950:
+    abstract: false
+    derived_from: tosca.nodes.SoftwareComponent
+
+topology_template:
+  node_templates:
+    TestNode:
+      type: ru.basis.nodes.TestLocalComponent1950
