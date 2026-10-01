@@ -6,15 +6,10 @@ imports:
 
 metadata:
   template_author: test
-  template_name: ru.basis.topologies.test_service_1950
+  template_name: ru.basis.test_component_1950
   template_version: 1.0.0
 
 node_types:
-  ru.basis.nodes.TestServiceNode1950:
+  ru.basis.nodes.TestComponent1950:
     abstract: false
     derived_from: tosca.nodes.SoftwareComponent
-
-topology_template:
-  node_templates:
-    TestNode:
-      type: ru.basis.nodes.TestServiceNode1950
