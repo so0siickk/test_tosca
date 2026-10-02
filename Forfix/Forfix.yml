@@ -1,0 +1,16 @@
+imports:
+- <normative-types.yml:1.2.0>
+- <yorc-types.yml:1.1.1>
+metadata:
+  template_author: test
+  template_name: new.test.new_for_test.teeeest.topologies.test_service_1950
+  template_version: 1.0.9
+node_types:
+  new.test.new_for_test.teeeest.nodes.TestServiceNode1950:
+    abstract: false
+    derived_from: tosca.nodes.SoftwareComponent
+topology_template:
+  node_templates:
+    TestNode:
+      type: new.test.new_for_test.teeeest.nodes.TestServiceNode1950
+tosca_definitions_version: tosca_simple_yaml_1_2
